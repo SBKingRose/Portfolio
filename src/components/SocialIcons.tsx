@@ -1,8 +1,9 @@
 import {
   FaGithub,
-  FaInstagram,
+  // FaInstagram,
   FaLinkedinIn,
-  FaXTwitter,
+  // FaXTwitter,
+  FaMedium,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -60,16 +61,21 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/SBKingRose/ShivamBhaskar" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/sbkingrose/" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
+          <a href="https://medium.com/@shivambhaskar95" target="_blank">
+            <FaMedium />
+          </a>
+        </span>
+        {/* <span>
           <a href="https://x.com" target="_blank">
             <FaXTwitter />
           </a>
@@ -78,14 +84,21 @@ const SocialIcons = () => {
           <a href="https://www.instagram.com" target="_blank">
             <FaInstagram />
           </a>
-        </span>
+        </span> */}
       </div>
-      <a className="resume-button" href="#">
+      {/* <a className="resume-button" href="#">
+        <HoverLinks text="RESUME" />
+        <span>
+          <TbNotes />
+        </span>
+      </a> */}
+      <a className="resume-button" href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
         </span>
       </a>
+
     </div>
   );
 };

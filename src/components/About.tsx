@@ -6,9 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+        DevOps Manager with 8+ years of experience optimizing software delivery, architecting cloud solutions, and automating the SDLC. Proven success in leading teams to implement CI/CD pipelines, containerization, and IaC frameworks, while ensuring cloud security, cost efficiency, and system performance. Passionate about driving operational agility and fostering innovation.
         </p>
       </div>
     </div>

@@ -10,21 +10,21 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                abc@gmail.com
+              <a href="mailto:shivambhaskar95@gmail.com" data-cursor="disable">
+              shivambhaskar95@gmail.com
               </a>
             </p>
             <h4>Phone</h4>
             <p>
-              <a href="tel:+919920782622" data-cursor="disable">
-                +91 9988776655
+              <a href="tel:+919971211153" data-cursor="disable">
+                +91 9971211153
               </a>
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/SBKingRose/ShivamBhaskar"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -32,7 +32,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sbkingrose/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -40,6 +40,14 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
+              href="https://medium.com/@shivambhaskar95"
+              target="_blank"
+              data-cursor="disable"
+              className="contact-social"
+            >
+              Medium <MdArrowOutward />
+            </a>
+            {/* <a
               href="https://x.com"
               target="_blank"
               data-cursor="disable"
@@ -54,11 +62,11 @@ const Contact = () => {
               className="contact-social"
             >
               Instagram <MdArrowOutward />
-            </a>
+            </a> */}
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Kabir Singh</span>
+              Designed and Developed <br /> by <span>Shivam Bhaskar</span>
             </h2>
             <h5>
               <MdCopyright /> 2025
