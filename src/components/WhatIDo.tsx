@@ -94,10 +94,13 @@ const WhatIDo = () => {
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
+                <div className="what-tags">AWS</div>
                 <div className="what-tags">Terraform</div>
                 <div className="what-tags">CDK</div>
                 <div className="what-tags">Ansible</div>
                 <div className="what-tags">Datadog</div>
+                <div className="what-tags">Kubernetes</div>
+                <div className="what-tags">Docker</div>
               </div>
               <div className="what-arrow"></div>
             </div>

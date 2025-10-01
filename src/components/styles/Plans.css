@@ -1,0 +1,48 @@
+.plans-section {
+  margin-bottom: 200px;
+}
+
+.plans-info-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.plans-box-left,
+.plans-box-right {
+  width: 45%;
+}
+
+.plans-box-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.plans-date {
+  font-size: 20px;
+  color: var(--accentColor);
+  margin: 0;
+}
+
+/* Reduce left title font size */
+.plans-box-left .career-role h4 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .plans-info-box {
+    flex-direction: column;
+  }
+  .plans-box-left,
+  .plans-box-right {
+    width: 100%;
+  }
+  .plans-box-right {
+    justify-content: flex-start;
+  }
+}
+
+

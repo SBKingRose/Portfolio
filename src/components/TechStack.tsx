@@ -13,14 +13,29 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
   "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "/images/docker.png",
+  "/images/aws_cloud.png",
+  "/images/kubernetes.png",
+  "/images/jenkins.png",
+  "/images/harness.jpg",
+  "/images/bitbucket.webp",
+  "/images/harness.jpg",
+  "/images/gitlab.jpg",
+  "/images/terraform.png",
+  "/images/ansible.png",
+  "/images/azure.jpg",
+  "/images/gcp.jpg",
+  "/images/sonarqube.webp",
+  "/images/python.jpg",
+  "/images/bash.png",
+  "/images/npm.png",
+  "/images/prometheus.jpg",
+  "/images/grafana.jpg",
+  "/images/datadog.avif",
+  "/images/fluentbit.png",
+  "/images/postgres.png",
+
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -130,9 +145,8 @@ const TechStack = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
+      const techEl = document.getElementById("techstack");
+      const threshold = techEl ? techEl.getBoundingClientRect().top : 0;
       setIsActive(scrollY > threshold);
     };
     document.querySelectorAll(".header a").forEach((elem) => {
@@ -167,7 +181,7 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="techstack">
+    <div id="techstack" className="techstack">
       <h2> My Techstack</h2>
 
       <Canvas
