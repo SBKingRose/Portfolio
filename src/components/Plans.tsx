@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "./styles/Plans.css";
 
 const Plans = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div id="plans" className="career-section plans-section section-container">
       <div className="career-container">
@@ -8,8 +15,17 @@ const Plans = () => {
           Continuous <span>Learning</span>
           <br /> Plan
         </h2>
+        
+        <div className="plans-toggle" onClick={toggleExpanded}>
+          <span className="plans-toggle-text">
+            {isExpanded ? "Hide Learning Plan" : "View Learning Plan"}
+          </span>
+          <span className={`plans-toggle-arrow ${isExpanded ? 'expanded' : ''}`}>
+            ▼
+          </span>
+        </div>
 
-        <div className="career-info">
+        <div className={`career-info plans-content ${isExpanded ? 'expanded' : 'collapsed'}`}>
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>

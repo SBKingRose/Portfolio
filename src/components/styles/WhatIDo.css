@@ -1,8 +1,8 @@
 .whatIDO {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  place-items: flex-start;
   position: relative;
   opacity: 1;
   height: auto;
@@ -15,7 +15,7 @@
 .what-box {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   z-index: 9;
 }
@@ -34,15 +34,17 @@
   color: var(--accentColor);
 }
 .what-box-in {
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   height: auto;
-  margin-left: 200px;
+  margin-left: 50px;
   position: relative;
-  display: none;
-  gap: 12px;
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
 }
 .what-content {
-  width: 420px;
+  width: 350px;
   height: auto;
   min-height: 0;
   transition: 0.5s;
@@ -50,6 +52,7 @@
   position: relative;
   padding: 24px;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .what-noTouch:hover,
@@ -283,10 +286,11 @@
 }
 @media only screen and (max-width: 1400px) {
   .what-box-in {
-    margin-left: 50px;
+    margin-left: 30px;
+    max-width: 1000px;
   }
   .what-content {
-    width: 380px;
+    width: 320px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -296,12 +300,13 @@
     padding-bottom: 30px;
   }
   .what-box-in {
-    height: 400px;
-    margin-left: -50px;
+    height: auto;
+    margin-left: 20px;
+    max-width: 800px;
   }
   .what-content {
     padding: 30px;
-    width: 450px;
+    width: 300px;
   }
   .what-content p {
     font-size: 12px;
@@ -332,7 +337,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: auto;
   }
   .what-box {
     width: 500px;
@@ -344,7 +349,9 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: auto;
+    flex-direction: column;
+    max-width: 100%;
   }
   .what-content h5,
   .what-content-flex {
